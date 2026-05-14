@@ -1,0 +1,725 @@
+<style>
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-bottom: 1px solid #eee;
+        
+        
+
+    }
+
+    .brand-section {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        height: 300px;
+        width: 500px;
+        position: absolute;
+        left: 0%;
+        top: -20%;
+    }
+
+    .logo-box {
+        background: #f1c40f;
+        padding: 10px;
+        border-radius: 4px;
+        font-weight: 900;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .logo-1 {
+        size: 50%;
+        font-size: 10px;
+        color: #f1c40f;
+        background-color: black;
+
+    }
+    
+    .company-info h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #222;
+        letter-spacing: -0.5px;
+    }
+
+    .Address {
+        font-size: 13px;
+        color: black;
+        margin-top: 4px;
+    }
+
+    .contact-section {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        position: absolute;
+        right: 1%;
+        top: 5%;
+        
+    }
+
+    .phone-block {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-right: 1px solid #ddd;
+        padding-right: 30px;
+    }
+
+    .phone-label {
+        font-size: 11px;
+        text-transform: uppercase;
+        color: black;
+        display: block;
+    }
+
+    .phone-number {
+        font-weight: 700;
+        font-size: 16px;
+        color: #2c3e50;
+    }
+
+    .email-btn {
+        background: black;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.3s;
+    }
+
+    .email-btn:hover {
+        background: white;
+        color: black;
+    }
+   /* ---------------------------------------------------------End of Header Section----------------------------------------------------- */
+   
+   /* ------------------------------------------------------Start of Navigation Section---------------------------------------------------*/
+    .navbar {
+    background-color: black; 
+    height: 50px;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 0 20px;
+    position: absolute;
+    top: 15%;
+}
+
+.nav-links {
+    display: flex;
+    height: 100%;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    gap: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* The darker blue "Active" state for Home */
+.nav-item.active {
+    background-color: black; 
+}
+
+.nav-item:hover {
+    background-color: balck(255, 255, 255, 0.1);
+}/* Search bar pushed to the right */
+
+
+.search-container {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    background: white;
+    border-radius: 4px;
+    align-items: center;
+    padding: 2px 10px;
+    height: 34px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-right: 1px solid #eee;
+    padding-right: 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    font-size: 13px;
+    width: 200px;
+}
+
+.mic-icon {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------------------End of Navigation Section---------------------------------------------------*/
+
+/* ------------------------------------------------------Start of Product Section---------------------------------------------------*/
+
+.product-showcase {
+    display: flex;
+    width: 98%;
+    margin: 40px auto;
+    background-color: #f0f4ff; /* Light blue background for the right side */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 20%;
+}
+
+.image-container {
+    flex: 1;
+    background-color: white; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* This creates the curved white-to-blue transition */
+    border-top-right-radius: 100px; 
+    border-bottom-right-radius: 100px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 20px;
+    height: 3px;
+    background: #ccc;
+    border-radius: 2px;
+}
+
+.dot.active {
+    background: black;
+}
+
+.details-container {
+    flex: 1;
+    padding: 60px 40px;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: lightgreen;
+    margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 14px;
+    color: lightgreen;
+    font-weight: normal;
+}
+
+.specs {
+    list-style: none;
+    padding: 0;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-quote {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1;
+}
+
+.btn-callback {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+    padding: 12px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.btn-quote:hover { background-color: #0056b3; }
+.btn-callback:hover { background-color: #f8f8f8; }
+
+/* ------------------------------------------------------End of Product Section---------------------------------------------------*/
+
+/* ------------------------------------------------------Start of Trending Section---------------------------------------------------*/
+/* Container Styles */
+.trending-section {
+    width: 95%;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 85%;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Grid Layout */
+.product-grid {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto; 
+  padding-bottom: 10px;
+  background-color: black;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+
+/* Card Design */
+.product-card {
+  flex: 0 0 calc(20% - 15px); 
+  min-width: 180px;
+  border: 1px solid #e9e9e9;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s ease;
+}
+
+/* Image Handling */
+.img-container {
+  width: 100%;
+  height: 200px;
+  background: #f3f2f2;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+/* Text Content */
+.product-info {
+  padding: 15px;
+}
+
+.product-info h3 {
+  font-size: 16px;
+  margin: 0 0 15px 0;
+  color: #000;
+}
+
+.price {
+  color: lightgreen; 
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.price span {
+  font-size: 14px;
+  font-weight: normal;
+  color: black;
+}
+
+.moq {
+  color: black;
+  font-size: 13px;
+  margin: 5px 0 15px 0;
+}
+
+/* Button Styling */
+.quote-btn {
+  width: 100%;
+  background: white;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quote-btn:hover {
+  background: black;
+  color: white;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 1024px) {
+  .product-card {
+    flex: 0 0 calc(50% - 10px); 
+  }
+}
+
+/* ------------------------------------------------------End of Trending Section---------------------------------------------------*/
+
+/*----------------------------------------------Starting of Product Service Section-----------------------------------------------------*/
+
+.products-services {
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 175%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+
+
+.product-grid-1 {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto; 
+  padding-bottom: 10px;
+  background-color: black;
+  padding: 20px 20px;
+  border-radius: 10px;
+}
+
+/* Individual Card Styling */
+.service-card {
+  width: calc(25% - 18px); 
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 90%;
+  background: #f3f2f2;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  padding-top: 15px;
+  background-color: white;
+}
+
+.content h3 {
+  font-size: 18px;
+  color: black; 
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.content p {
+  font-size: 14px;
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* View All Button */
+.view-btn {
+  
+  display: block;
+  margin: 10px auto;
+  width: 100px;
+  background-color: white; 
+  color: black;
+  text-align: center;
+  padding: 8px 0;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  
+  
+}
+
+.view-btn:hover {
+  opacity: 0.9;
+  background-color: black;
+  color: white;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+  .service-card {
+    width: calc(50% - 10px); 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .service-card {
+    width: 100%; 
+  }
+}
+
+/*----------------------------------------------Ending of Product Service Section-----------------------------------------------------*/
+
+/*----------------------------------------------Starting of About Us Section-----------------------------------------------------*/
+
+.about-container {
+  font-family: Arial, sans-serif; 
+  padding: 20px;
+  max-width: 1200px;
+  line-height: 1.6;
+  position: absolute;
+  top: 270%;
+}
+
+.about-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: justify; 
+}
+
+.read-more {
+  font-size: 14px;
+  font-weight: 700;
+  color: #6c757d; 
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/*----------------------------------------------Ending of About Us Section-----------------------------------------------------*/
+
+/*----------------------------------------------Starting of Info Section-----------------------------------------------------*/
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  padding: 20px;
+  background-color: black;
+  position: absolute;
+  border-radius: 10px;
+  top: 307%;
+}
+
+.info-card {
+  background-color: white; 
+  padding: 25px;
+  border-radius: 25px;     
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.icon {
+  font-size: 24px;
+  color: black; 
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 14px;
+  color: #333;
+  font-family: sans-serif;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 700; 
+  color: #000;
+  font-family: sans-serif;
+}
+
+/* Responsive adjustment for mobile screens */
+@media (max-width: 900px) {
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*----------------------------------------------Ending of Info Section-----------------------------------------------------*/
+
+/*----------------------------------------------Starting of Footer Section-----------------------------------------------------*/
+
+.main-footer {
+    background-color: #1a2229; /* Dark slate background */
+    color: #ffffff;
+    width: 97%;
+    
+    padding: 30px 0 0 0;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 375%;
+    border-radius: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #a0aab2; /* Muted grey for links */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-col ul li a::before {
+    content: "→ ";
+    margin-right: 5px;
+}
+
+.info-col p, .info-col address {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-style: normal;
+}
+
+.login-btn {
+    display: inline-block;
+    background-color: #007bff; /* Bright blue */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.product-lists {
+    display: flex;
+    gap: 40px;
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom {
+    background-color: #0d1117;
+    padding: 20px 0;
+    border-top: 1px solid #2d333b;
+    border-radius: 10px;
+
+}
+
+.bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.trade-india-logo img {
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+    margin-right: 15px;
+    height: 15%;
+    width: 10%;
+    position: relative;
+    left: 15%;
+}
+
+.copyright-text {
+    font-size: 12px;
+    color: #ffffff;
+    position: relative;
+    right: 29%;
+}
+
+.scroll-top {
+    position: absolute;
+    right: 20px;
+    background: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*----------------------------------------------Ending of Footer Section-----------------------------------------------------*/
